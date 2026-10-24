@@ -1,0 +1,123 @@
+{
+  "config": {
+    "episodes": 2000,
+    "episodes_slippery": 2000,
+    "runs": 10,
+    "alpha": 0.1,
+    "gamma": 0.99,
+    "epsilon": 1.0,
+    "epsilon_decay": 0.995,
+    "epsilon_min": 0.05,
+    "max_steps": 200,
+    "test_every": 10,
+    "test_episodes": 100,
+    "slip": 0.1
+  },
+  "shortest_route_steps": 30,
+  "best_possible_return": 92,
+  "agents": {
+    "Q-learning": {
+      "test_success_pct": {
+        "mean": 99.3,
+        "std": 0.7810249675906654
+      },
+      "test_avg_steps": {
+        "mean": 36.821,
+        "std": 0.2796944761699809
+      },
+      "test_avg_return": {
+        "mean": 75.55,
+        "std": 1.6580892617709084
+      },
+      "train_last100_success_pct": {
+        "mean": 96.7,
+        "std": 2.7586228448267445
+      },
+      "train_last100_collision_pct": {
+        "mean": 3.2,
+        "std": 2.4819347291981715
+      },
+      "train_last100_return": {
+        "mean": 64.28,
+        "std": 9.41283060508368
+      },
+      "train_total_collisions": {
+        "mean": 356.4,
+        "std": 54.146468028856695
+      },
+      "reliable_route_from_episode": [
+        670,
+        950,
+        420,
+        1110,
+        1990,
+        310,
+        320,
+        760,
+        390,
+        1430
+      ]
+    },
+    "SARSA": {
+      "test_success_pct": {
+        "mean": 99.1,
+        "std": 1.2206555615733703
+      },
+      "test_avg_steps": {
+        "mean": 36.87,
+        "std": 0.28989653326661147
+      },
+      "test_avg_return": {
+        "mean": 75.192,
+        "std": 2.0373649648504317
+      },
+      "train_last100_success_pct": {
+        "mean": 95.2,
+        "std": 2.5612496949731396
+      },
+      "train_last100_collision_pct": {
+        "mean": 4.8,
+        "std": 2.5612496949731396
+      },
+      "train_last100_return": {
+        "mean": 62.36999999999999,
+        "std": 5.411506259813438
+      },
+      "train_total_collisions": {
+        "mean": 358.2,
+        "std": 53.225557770680055
+      },
+      "reliable_route_from_episode": [
+        2000,
+        640,
+        1220,
+        470,
+        1960,
+        1080,
+        1910,
+        980,
+        1690,
+        760
+      ]
+    },
+    "Random": {
+      "test_success_pct": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "test_collision_pct": {
+        "mean": 18.5,
+        "std": 5.371219600798314
+      },
+      "test_avg_steps": {
+        "mean": 187.686,
+        "std": 4.0507288233106875
+      },
+      "test_avg_return": {
+        "mean": -553.8859999999999,
+        "std": 9.554111366317649
+      }
+    }
+  },
+  "training_seconds": 12.2
+}
